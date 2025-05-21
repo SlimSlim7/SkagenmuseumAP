@@ -174,6 +174,137 @@
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
+.footer {
+  background-color: #f5f5f5;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__logo img {
+  max-width: 150px;
+}
+
+.footer__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .footer__columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer__column {
+  text-align: left;
+}
+
+.footer__column h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.footer__column a {
+  display: block;
+  margin: 0.8rem 0;
+  color: #666;
+  font-size: 0.95rem;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.footer__column a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer_logo {
+  margin-bottom: 64px;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__icons a {
+  color: #666;
+  font-size: 1.2rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.footer__icons a:hover {
+  color: #000;
+}
+
+.copyright {
+  margin-top: 8rem;
+}
+
+.copyright__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.copyright__text .copyright__topline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+
+.copyright__text .copyright__topline img {
+  width: 20px;
+  height: auto;
+}
+
+.copyright__text .copyright__topline p {
+  margin: 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.copyright__text .cvr {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.cookies {
+  margin-top: 5rem;
+}
+
 *,
 *::before,
 *::after {
