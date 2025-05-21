@@ -1,7 +1,188 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.main-header {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.main-header .top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main-header .top-box .top-box-wrapper {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(93, 152, 255, 0.2)), to(rgba(255, 206, 56, 0.2)));
+  background: linear-gradient(to right, rgba(93, 152, 255, 0.2), rgba(255, 206, 56, 0.2));
+  max-width: 1200px;
+  position: relative;
+  right: 2rem;
+  padding: 16px 2rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main-header .top-box .top-box-wrapper .top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .top-box .top-box-wrapper .top-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.main-header .top-box .top-box-wrapper .top-menu li a:hover {
+  color: #000;
+}
+
+.main-header .main-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-header .main-nav .logo {
+  position: absolute;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-header .main-nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  margin-right: 12rem;
+  padding: 0;
+  position: relative;
+}
+
+.main-header .main-nav .nav-menu li {
+  position: relative;
+}
+
+.main-header .main-nav .nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.main-header .main-nav .nav-menu li .dropdown {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  padding: 2rem 4rem;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-header .main-nav .nav-menu li.active .dropdown {
+  display: block;
+}
+
+.main-header .main-nav .nav-menu li .dropdown li {
+  margin-bottom: 0.5rem;
+}
+
+.main-header .main-nav .nav-menu li .dropdown li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.main-header .main-nav .nav-menu li .dropdown li a:hover {
+  background: #f0f0f0;
+}
+
+.main-header .main-nav .buy-button {
+  position: absolute;
+  right: 2rem;
+}
+
+.main-header .main-nav .buy-button .button-wrapper {
+  display: inline-block;
+  padding: 6px;
+  border: 2px solid #e5d5b4;
+  border-radius: 9999px;
+  background: white;
+}
+
+.main-header .main-nav .buy-button .button-wrapper a {
+  display: inline-block;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #111;
+  background: -webkit-gradient(linear, left top, right top, from(#cd961e), color-stop(#ffda93), to(#cd961e));
+  background: linear-gradient(to right, #cd961e, #ffda93, #cd961e);
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
