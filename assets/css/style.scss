@@ -1,9 +1,14 @@
+@import 'navigation';
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+}
 // Farvepalette
     $midnightBlue: #113243;
     $blueRandom: #13374B;
