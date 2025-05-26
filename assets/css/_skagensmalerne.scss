@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+
+.intro-text{
+    text-align: center;
+}
+
+.skagensmalerne{
+    margin-bottom: 124px;
+    margin: 124px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
+    gap: 24px;
+    padding: 8px;
+  }
+  
+  .card {
+    background-color: #FFF4E0;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+   
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .card p {
+    margin: 5px 0;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
