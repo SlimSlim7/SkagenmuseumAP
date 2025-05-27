@@ -449,7 +449,7 @@ main{
     
   }
   .tre-museer-indhold {
-    margin: 0 10%; /* Her sætter vi margin som main */
+    margin: 0 10%; 
   }
 
   .museer-text h3{
@@ -568,7 +568,7 @@ main{
       transform: translateY(-50%);
       font-size: 18px;
       color: #989898;
-      pointer-events: none; // så brugeren stadig kan klikke i input
+      pointer-events: none; 
     }
   }
   
