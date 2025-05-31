@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.museer-hero {
+    background-image: url(../img/museer-hero.webp);
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;
+    height: 400px;                          
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+    color: white;                   
+    position: relative;
+    margin-top: 2rem;
+    margin-left: calc(-10vw);
+    margin-right: calc(-10vw);
+
+    h1{
+        margin: 12px 0px 12px 140px ;
+        font-size: 48px;
+        font-weight: 700;
+        
+    }
+    p{
+        margin-left: 140px;
+        font-size: 18px;
+        width: 30%;
+    }
+
+  }
+
+
+
+.tilbage-knap-museer{
+display: flex;
+justify-content: start;
+gap: 1rem;
+text-decoration: none;
+color: #ffffff;
+font-weight: 400;
+font-size: 16px;
+margin: 2rem 0rem 6rem 140px;
+
+}
+.pil-tilbage-museer{
+font-size: 1.2rem;
+}
+
+.museer-container{
+    margin-bottom: 120px;
+}
+
+ .divider-wrapper-museer{
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    margin: 80px 0px 40px 0px;
+    justify-content: space-between;
+  
+  
+    h2{
+      font-size: 24px;
+      white-space: nowrap;
+      color: #3D62A9;
+    }
+  }
+ 
+  .museer-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #3D62A9;
+  }
+
+
+  .museum-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    align-items: stretch;
+    height: 400px;
+    
+  }
+  
+  .museum-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    justify-content: space-between;
+  }
+  
+  .museum-wrapper img {
+    flex: 1;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    
+  }
+  
+  .museer-btn {
+    margin-top: auto;
+    padding: 12px 26px;
+    font-size: 16px;
+    background-color: #F9CB80;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+  }
+  
+  .museer-btn:hover {
+    background-color: #c2d054;
+  }
+  
+  .museer-splitter{
+    margin: 87px 0px 87px 0px;
+    border: none;
+    border-top: 1px solid #7098DD; 
+    height: 0; 
+  }
+
+ 
