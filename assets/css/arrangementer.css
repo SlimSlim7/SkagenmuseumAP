@@ -1,0 +1,69 @@
+*, h1, p{
+    margin: 0;
+}
+.heroImg{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.arrangementerHero{
+    position: relative;
+    overflow: hidden;
+}
+.heroContent{
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 80%;
+}
+.heroContent h1{
+    font-size: 56px;
+    font-family: lust;
+    margin-top: 16px;
+}
+.heroContent p{
+    font-size: 18px;
+    font-family: Montserrat;
+}
+.filterDate{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    padding: 32px 40px 32px 40px;
+    
+}
+.filterContent{
+    background: #F6F6F6;
+    margin: 56px 8% 56px 8%;
+    display: flex;
+    justify-content: space-between;
+}
+.filterOption{
+    display: flex;
+}
+.date{
+    border-radius: 6px 0px 0px 6px;
+    border-right: 1px solid #D0D0D0;
+}
+.filterLocation{
+    border-left: 1px solid #D0D0D0;
+}
+main{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.eventDate{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 56px;
+}
+.eventImg{
+    width: 460px;
+    border-radius: 6px;
+}
+.eventContent{
+    display: flex;
+}
