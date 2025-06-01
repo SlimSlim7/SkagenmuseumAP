@@ -2566,6 +2566,101 @@ p.h3-fake {
   border-radius: 6px;
 }
 
+.billet-hero {
+  background-image: url(../img/hero-aabningstider.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  position: relative;
+  margin-top: 2rem;
+  margin-left: calc(-10vw);
+  margin-right: calc(-10vw);
+}
+
+.billet-hero h1 {
+  margin: 12px 0px 12px 140px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.billet-hero p {
+  margin-left: 140px;
+  font-size: 18px;
+}
+
+.billet-hero-text {
+  margin-top: 6rem;
+}
+
+.tabs-billet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin: 80px 0px 80px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab-billet {
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 0.5rem;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.tab-billet.active {
+  border-bottom: 3px solid #ECA619;
+  /* Gul linje under aktiv tab */
+}
+
+.tab-billet-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+}
+
+.tab-billet-header svg {
+  width: 28px;
+  height: 28px;
+}
+
+.tab-billet-overskrift {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#tab-billet-content img {
+  width: 500px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
 *,
 *::before,
 *::after {
