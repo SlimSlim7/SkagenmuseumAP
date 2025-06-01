@@ -14,7 +14,7 @@ h4{
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%;
+    line-height: 140%;
     margin: 0;
     margin-bottom: 8px;
 }
@@ -63,4 +63,23 @@ h4{
     background-color: white;
     border-radius: 60px;
     border: 2px solid #F9CB80;
+}
+
+/* --------responsiv---------- */
+
+/* tablet */
+@media screen and (max-width: 600px){
+.vearkContainer{
+    display: block;
+}
+.veark{
+    margin-bottom: 24px;
+}
+h1{
+    font-size: 32px;
+}
+}
+/* mobile */
+@media screen and (max-width: 400px){
+
 }
