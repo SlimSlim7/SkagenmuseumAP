@@ -1,0 +1,41 @@
+.udvalgteVearkerMainContent{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+h1{
+    font-size: 64px;
+    font-family: lust;
+    text-align: center;
+}
+h4{
+    color: #161616;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.vearkImg{
+    width: 100%;
+    display: block;
+}
+.imgWrapper{
+    max-width: 575px;
+    margin: 0 auto;
+}
+.vearkInfo{
+    margin: 8px;
+}
+.afKunster{
+    font-size: 14px;
+    color: #161616;
+    font-weight: 400;
+    margin: 0;
+    font-family: Montserrat;
+}
+.vearkContainer{
+    display: flex;
+    justify-content: center;
+}
