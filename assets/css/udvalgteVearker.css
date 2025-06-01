@@ -1,6 +1,7 @@
 .udvalgteVearkerMainContent{
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 0 20px 0;
 }
 h1{
     font-size: 64px;
@@ -22,11 +23,11 @@ h4{
     display: block;
 }
 .imgWrapper{
-    max-width: 575px;
+    max-width: 570px;
     margin: 0 auto;
 }
 .vearkInfo{
-    margin: 8px;
+    margin-top: 16px;
 }
 .afKunster{
     font-size: 14px;
@@ -37,5 +38,29 @@ h4{
 }
 .vearkContainer{
     display: flex;
-    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.vearkImg{
+    filter: drop-shadow(-3px 10px 16px rgba(3, 14, 23, 0.30));
+}
+
+/* ------knap------- */
+.mainBtn{
+    border-radius: 60px;
+    background: #F9CB80;
+    padding: 12px 26px;
+    border: 2px solid #F9CB80;
+    font-family: Montserrat;
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0 auto;
+    transition: .3s;
+}
+.mainBtn:hover{
+    background-color: white;
+    border-radius: 60px;
+    border: 2px solid #F9CB80;
 }
