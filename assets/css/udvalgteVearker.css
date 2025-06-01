@@ -11,7 +11,7 @@ h1{
 h4{
     color: #161616;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
@@ -77,6 +77,9 @@ h4{
 }
 h1{
     font-size: 32px;
+}
+h4{
+    font-size: 18px;
 }
 }
 /* mobile */
