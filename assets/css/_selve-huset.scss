@@ -330,3 +330,97 @@ p.h3-fake{
     border-radius: 6px;
     
   }
+
+  @media screen and (max-width: 768px) {
+    .main-header {
+      display: none;
+    }
+
+    .footer{
+      display: none;
+    }
+
+    .divider-wrapper-huset{
+      display: flex;
+      justify-content: center
+      ;
+    }
+
+    .divider-wrapper-huset h1{
+      font-size: 28px;
+    }
+     
+    .divider-wrapper-huset p{
+      text-align: center;
+      margin: 0;
+    }
+
+    .huset__divider{
+      display: none;
+    }
+
+    .historie-text p{
+      margin: 20px 0px 20px 0px;
+      font-size: 12px;
+    }
+    .historie-text h3{
+      margin: 20px 0px 20px 0px;
+      text-align: center;
+    }
+
+    .huset_museer__divider{
+      display: none;
+    }
+
+    .divider-wrapper-museer{
+      display: flex;
+      justify-content: center;
+    }
+
+    .divider-wrapper-museer h2{
+      text-align: center;
+      margin: 0;
+    }
+
+    .museer-wrapper {
+      flex-direction: column;
+      height: auto; 
+      max-width: 100%;
+    }
+  
+    .museer-wrapper img {
+      width: 100%;
+      height: auto; 
+      margin-bottom: 1rem; 
+    }
+  
+    .museer-text {
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .museer-text h2 {
+      font-size: 20px;
+    }
+  
+    .museer-text p {
+      font-size: 16px;
+    }
+  
+    .museer-btn {
+      
+      font-size: 16px;
+    }
+
+    .museer-wrapper2 {
+      flex-direction: column;
+      height: auto; 
+      max-width: 100%;
+    }
+  
+    .museer-wrapper2 img {
+      width: 100%;
+      height: auto; 
+      margin-bottom: 1rem; 
+    }
+  }
