@@ -1,6 +1,13 @@
 *, h1, p{
     margin: 0;
 }
+p, h4{
+    font-size: 18px;
+    font-family: Montserrat;
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
 .heroImg{
     width: 100%;
     height: auto;
@@ -46,10 +53,10 @@
 }
 .date{
     border-radius: 6px 0px 0px 6px;
-    border-right: 1px solid #D0D0D0;
+    border-right: 0.5px solid #D0D0D0;
 }
 .filterLocation{
-    border-left: 1px solid #D0D0D0;
+    border-left: 0.5px solid #D0D0D0;
 }
 main{
     margin-left: 8%;
@@ -66,4 +73,36 @@ main{
 }
 .eventContent{
     display: flex;
+    gap: 32px;
+}
+.eventDateDetail{
+    border-top: 0.5px solid #D0D0D0;
+    padding-top: 16px;
+}
+.tagsContent{
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+.tags{
+    display: inline-block;
+    padding: 8px;
+    border-radius: 6px;
+    text-align: center;
+}
+.location{
+    background-color: #D8E6FF;
+}
+.price{
+    background-color: #375CA3;
+    color: white;
+}
+.eventline{
+    width: 80%;
+}
+.eventTitle{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
 }
