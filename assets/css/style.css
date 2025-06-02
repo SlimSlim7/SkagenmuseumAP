@@ -1343,14 +1343,11 @@ h2 {
 .værker-container img {
   width: 300px;
   height: 300px;
-  /* Fast højde = gør det muligt at croppe */
   border-radius: 6px;
   -o-object-fit: cover;
      object-fit: cover;
-  /* Vigtigt: beskærer billede til at fylde boks */
   -o-object-position: center;
      object-position: center;
-  /* Eller fx: top, bottom, left, right */
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -1358,10 +1355,8 @@ h2 {
 #værker1 {
   -o-object-position: top;
      object-position: top;
-  /* viser toppen */
   -o-object-position: center left;
      object-position: center left;
-  /* viser venstre midte */
   -o-object-position: 20% 20%;
      object-position: 20% 20%;
 }
@@ -1369,10 +1364,8 @@ h2 {
 #værker2 {
   -o-object-position: top;
      object-position: top;
-  /* viser toppen */
   -o-object-position: center left;
      object-position: center left;
-  /* viser venstre midte */
   -o-object-position: 20% 20%;
      object-position: 20% 20%;
 }
@@ -1628,25 +1621,19 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /* Cards i én kolonne */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* Centrer kortene horisontalt */
   }
   .arra-card {
     width: 90%;
-    /* Fyld næsten hele skærmen på mobil */
     margin-bottom: 40px;
-    /* Lidt mindre margin på mobil */
   }
   .vaeker-wrapper h2 {
     text-align: center;
-    /* Centrerer overskriften */
   }
   .pil-wrapper {
     display: none;
-    /* Skjuler pilene på mobil */
   }
   .slider-wrapper {
     overflow-x: auto;
