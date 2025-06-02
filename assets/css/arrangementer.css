@@ -118,6 +118,7 @@ main{
     line-height: 150%;
     margin-bottom: 8px;
 }
+/* -------knap------- */
 .mainBtn{
     border-radius: 60px;
     background:#F9CB80;
@@ -127,6 +128,14 @@ main{
     font-family: Montserrat;
     width: fit-content;
 }
+.showMoreBtn{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+/* ------------------- */
+
 hr{
     width: 100%;
     height: 0.5px;
