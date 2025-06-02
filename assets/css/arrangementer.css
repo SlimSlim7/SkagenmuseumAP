@@ -1,12 +1,18 @@
 *, h1, p{
     margin: 0;
 }
-p, h4{
-    font-size: 18px;
+h4{
+    font-size: 22px;
     font-family: Montserrat;
     margin-bottom: 16px;
     font-weight: 400;
     line-height: 150%;
+}
+p{
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 150%;
+
 }
 .heroImg{
     width: 100%;
@@ -39,8 +45,7 @@ p, h4{
     align-items: center;
     gap: 16px;
     font-size: 16px;
-    padding: 32px 40px 32px 40px;
-    
+    padding: 32px 40px 32px 40px; 
 }
 .filterContent{
     background: #F6F6F6;
@@ -74,10 +79,13 @@ main{
 .eventContent{
     display: flex;
     gap: 32px;
+    margin-bottom: 56px;
 }
 .eventDateDetail{
     border-top: 0.5px solid #D0D0D0;
     padding-top: 16px;
+    flex: 0 0 auto;
+    width: 150px;
 }
 .tagsContent{
     display: flex;
@@ -86,9 +94,12 @@ main{
 }
 .tags{
     display: inline-block;
-    padding: 8px;
+    padding: 4px 12px 4px 12px;
     border-radius: 6px;
     text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 .location{
     background-color: #D8E6FF;
@@ -105,4 +116,30 @@ main{
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+    margin-bottom: 8px;
 }
+.mainBtn{
+    border-radius: 60px;
+    background:#F9CB80;
+    border: none;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-family: Montserrat;
+    width: fit-content;
+}
+hr{
+    width: 100%;
+    height: 0.5px;
+    background-color: #D0D0D0;
+    border: none;
+}
+.eventWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.betaling{
+    color: white;
+    background-color: #884A57;
+}
+
