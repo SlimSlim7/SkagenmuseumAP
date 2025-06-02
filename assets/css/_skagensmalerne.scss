@@ -1,5 +1,7 @@
 .h1-skagensmalerne{
     text-align: center;
+    margin: 72px 0px 16px 0px;
+    font-size: 64px;
 }
 
 .intro-text{
@@ -137,7 +139,7 @@
 }
 
 // tilbage knap
-.tilbage-knap {
+.tilbage-knap-profil {
   display: flex;
   justify-content: start;
   gap: 1rem;
@@ -149,9 +151,7 @@
 
 }
 
-
-
-.tilbage-knap .pil {
+.tilbage-knap-profil .pil {
   font-size: 1.2rem;
 }
 
@@ -236,15 +236,75 @@
 
 .værker-container img {
   width: 300px;
-  height: auto;
+  height: 300px;               /* Fast højde = gør det muligt at croppe */
   border-radius: 6px;
-  object-fit: cover;
+  object-fit: cover;           /* Vigtigt: beskærer billede til at fylde boks */
+  object-position: center;     /* Eller fx: top, bottom, left, right */
   flex-shrink: 0;
 }
 
+#værker1{
+  object-position: top;           /* viser toppen */
+object-position: center left;   /* viser venstre midte */
+object-position: 20% 20%;  
+}
+
+#værker2{
+  object-position: top;           /* viser toppen */
+object-position: center left;   /* viser venstre midte */
+object-position: 20% 20%;  
+}
+
+.dot-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-wrapper::before,
+.slider-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+
 
 // relaterede kunstnere
-.divider-wrapper{
+.relaterede-divider-wrapper{
   display: flex;
   align-items: center;
   gap: 4rem; 
@@ -369,4 +429,108 @@
   cursor: pointer;
   transform: scale(1.03); 
   transition: transform 0.5s ease;
+}
+
+// media query
+@media screen and (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .h1-skagensmalerne{
+    font-size: 32px;
+  }
+
+  .profil-layout {
+    flex-direction: column;
+    margin: 0px 40px 0px 40px;
+  }
+
+  .dato-wrapper {
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+
+  .dato-gruppe {
+    min-width: 120px; 
+  }
+
+  .profil-info h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .profil-info p {
+    font-size: 1rem;
+  }
+
+  .info-box__divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .arra-container {
+    flex-direction: column;   /* Cards i én kolonne */
+    align-items: center;      /* Centrer kortene horisontalt */
+  }
+
+  .arra-card {
+    width: 90%;               /* Fyld næsten hele skærmen på mobil */
+    margin-bottom: 40px;      /* Lidt mindre margin på mobil */
+  }
+
+  .vaeker-wrapper h2 {
+    text-align: center; /* Centrerer overskriften */
+  }
+
+  .pil-wrapper {
+    display: none; /* Skjuler pilene på mobil */
+  }
+
+  .slider-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .værker-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  .værker-container img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .slider-wrapper {
+    scroll-snap-type: x mandatory;
+  }
+  
+  .værker-container img {
+    scroll-snap-align: start;
+  }
+}
+
+@media (min-width: 769px) {
+  .swipe-hint {
+    display: none;
+  }
+
+  .dot-indicators {
+    display: none;
+  }
+
+ 
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
