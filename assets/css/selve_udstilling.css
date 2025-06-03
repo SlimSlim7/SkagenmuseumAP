@@ -11,6 +11,7 @@ h1{
     font-size: 56px;
     font-weight: 700;
     text-align: center;
+    white-space: nowrap;
 }
 p{
     font-family: Montserrat;
@@ -69,4 +70,42 @@ p{
 }
 .goBack p{
     font-size: 16px;
+}
+
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 32px;
+        white-space: nowrap;
+    }
+    .heroText{
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 700px){
+    h1{
+        font-size: 28px;
+        white-space: nowrap;
+    }
+    .heroText{
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .titleSubtext{
+        font-size: 18px;
+    }
+    .goBack{
+        margin: 24px;
+    }
+    .goBack p{
+        display: none;
+    }
+    .udstillingContent{
+        margin: 8% 10%;
+    }
+        
+
 }
