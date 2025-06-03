@@ -2503,6 +2503,9 @@ p.h3-fake {
   flex-direction: column;
   align-items: center;
 }
+.aegteUng-main p {
+  padding: 2% 0;
+}
 
 .aegteUng-container {
   padding: 4% 22%;
@@ -2510,16 +2513,46 @@ p.h3-fake {
 
 .hero-text {
   text-align: center;
+  margin: 2% 0;
+}
+.hero-text h1 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 
-.ung-img {
+.ung-img img {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
 
+.aegte-ung_vid {
+  height: 500px;
+  margin: 0 auto;
+}
+
+.supportProject h3 {
+  text-align: center;
+}
+.supportProject img {
+  padding: 10px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .aegte-ung_vid {
+    height: 187px;
+    margin: 0 auto;
+  }
+  .aegteUng-container {
+    padding: 0 0;
+  }
+}
 *,
 *::before,
 *::after {
