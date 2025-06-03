@@ -291,10 +291,7 @@ object-position: 20% 20%;
   pointer-events: none;
 }
 
-.slider-wrapper::before {
-  left: 0;
-  background: linear-gradient(to right, white, transparent);
-}
+
 
 .slider-wrapper::after {
   right: 0;

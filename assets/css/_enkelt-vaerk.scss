@@ -28,9 +28,7 @@
 
   }
   
-  .hoejre {
-    max-width: 600px;
-  }
+  
   
   .hoejre hr {
     margin-bottom: 20px;
@@ -69,7 +67,7 @@
   
   .placering-wrapper {
     display: inline-block;
-    margin-left: 180px; 
+    margin-left: 50px; 
     color: white;
   }
   
@@ -176,5 +174,90 @@
  .vaerker-container-slider{
     margin-bottom: 80px;
  }
+
+
+ @media (max-width: 768px) {
+  .indhold {
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;
+  }
+
+  .venstre img.kunst-billede {
+    width: 100%;
+    height: auto;
+  }
+
+  .hoejre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tilbage-knap-værker {
+    font-size: 16px;
+    margin-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .placering-wrapper {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+   
+  }
+
+
+  .sociale-links {
+    justify-content: flex-start;
+  }
+
+  .sociale-links i {
+    font-size: 20px;
+  }
+
+  .hoejre h1 {
+    font-size: 22px;
+  }
+
+  .fodliste {
+    margin-top: 4rem;
+  }
+
+  .kunster-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .kunster-wrapper img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .kunster-kort-info {
+    padding: 0 20px;
+  }
+
+  .kunster-btn {
+    margin-top: 20px;
+  }
+
+ 
+
+  .kunster-divider {
+    width: 80%;
+  }
+
+  .placering-streg {
+    width: 50%;
+    margin: 0 auto 10px auto;
+  }
+}
+
 
   
