@@ -1,39 +1,100 @@
+p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.heroIntrotekst{
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: Montserrat;
 
-
-.aegteUng-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p{
-        padding: 2% 0 ;
-    }
-    
 }
 .aegteUng-container{
        padding: 4% 22%;
     
 }
 .hero-text{
-   text-align: center;
-   margin: 2% 0;
+    text-align: center;
+   margin: 56px 0;
    h1{ 
     font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%;
+    font-style: normal;
+    font-weight: 700;
    }
 }
-.ung-img img{
-    display: flex;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-            
-        }
+.ung-img{
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.ungImgContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
     
 .aegte-ung_vid{
     height: 500px;
-    margin: 0 auto;
+    margin-bottom: 56px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.eagteUngintro{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 600;
+    margin-bottom: 40px;
+
+}
+hr{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #7098DD;
+    border: none;
+    height: 1px;
+    margin-bottom: 40px;
+}
+.ungContent{
+    margin: 0 16% 40px 16%;
+    h3{
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+}
+.sponser{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.ungFirstContent{
+    margin-bottom: 40px;
+}
+.quote{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.quoteBy{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.ungImgDescription{
+    color: #636363;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.subImg{
+    margin: 40px 0 40px 0;
 }
 .supportProject{
 
@@ -45,16 +106,34 @@ line-height: 150%;
         padding: 10px 40px;
     }
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-  .aegte-ung_vid{
-   height: 187px;
-    margin: 0 auto;
+@media only screen and (max-width: 900px) {
+    .ungContent{
+        margin: 0 10% 0 10%;
+    }
+    .ungContent h3{
+        margin-top: 40px;
+    }
+    .logo{
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .quote{
+        margin-top: 40px;
+    }
+    .ung-img{
+        margin-top: 40px;
+    }
 }
-.aegteUng-container{
-       padding: 0 0;
-    
-}
+
+@media only screen and (max-width: 600px){
+    .hero-text h1{
+        font-size: 32px;
+    }
+    .ungContent h3{
+        font-size: 22px;
+    }
 }

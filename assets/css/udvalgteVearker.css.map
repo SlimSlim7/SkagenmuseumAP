@@ -1,1 +1,9 @@
-{"version":3,"sources":["udvalgteVearker.scss","udvalgteVearker.css"],"names":[],"mappings":"AAAA;EACI,UAAA;ACCJ","file":"udvalgteVearker.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "udvalgteVearker.scss"
+    ],
+    "names": [],
+    "file": "udvalgteVearker.css"
+}
