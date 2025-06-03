@@ -74,6 +74,7 @@ main{
 }
 .eventImg{
     width: 460px;
+    height: 100%;
     border-radius: 6px;
 }
 .eventContent{
@@ -159,9 +160,90 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 8px;
 }
 .betaling{
     color: white;
     background-color: #884A57;
 }
+.eventDateDetailInfo{
+    display: none;
+}
 
+
+@media screen and (max-width: 1100px){
+   .heroContent h1{
+        font-size: 40px;
+    }
+    .eventDateDetail{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .eventDateDetailInfo{
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+@media screen and (max-width: 900px){
+    .eventContent{
+        display: block;
+    }
+    .eventImg{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .eventDateDetailInfo{
+        margin-bottom: 24px;
+    }
+    .eventWrapper{
+        gap: 16px;
+    }
+    .mainBtn{
+        margin: 0 auto;
+    }
+    .filterContent{
+        margin: 32px 8% 32px 8%;
+    }
+    .heroContent h1{
+        font-size: 24px;
+        margin: 0;
+    }
+    .heroContent p{
+        font-size: 16px;
+        margin: 0;
+    }
+    .filterDate{
+        padding: 16px 24px;
+    }
+    .eventDate{
+        margin-bottom: 32px;
+    }
+    .filterDate p{
+        font-size: 12px;
+    }
+    .filterDate svg{
+        width: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+    .filterDate p{
+        font-size: 10px;
+    }
+    .filterDate{
+        padding: 8px 16px;
+    }
+    .heroContent h1{
+        font-size: 22px;
+    }
+    .eventTitle{
+        font-size: 20px;
+    }
+    .heroContent p{
+        font-size: 14px;
+    }
+    .heroContent{
+        top: 50%;
+    }
+}
