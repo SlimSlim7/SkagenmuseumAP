@@ -26,3 +26,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
+  // burger menu
+
+  const burger = document.querySelector('.burger');
+const mobileMenu = document.querySelector('#mobile-menu');
+
+burger.addEventListener('click', () => {
+  const isActive = mobileMenu.classList.toggle('active');
+
+  // Opdater aria-attributes for bedre tilgængelighed
+  burger.setAttribute('aria-expanded', isActive);
+  mobileMenu.setAttribute('aria-hidden', !isActive);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileNav = document.querySelector('#mobile-menu');
+  const dropdownItems = mobileNav.querySelectorAll('.dropdown-click');
+
+  dropdownItems.forEach(item => {
+    const link = item.querySelector('a');
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      // Luk andre dropdowns i mobilmenu (valgfrit)
+      dropdownItems.forEach(other => {
+        if (other !== item) other.classList.remove('active');
+      });
+
+      // Toggle aktiv klasse for dropdown
+      item.classList.toggle('active');
+    });
+  });
+
+  // Klik udenfor mobilmenu lukker dropdowns (valgfrit)
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#mobile-menu')) {
+      dropdownItems.forEach(item => item.classList.remove('active'));
+    }
+  });
+});
+
+  
+  

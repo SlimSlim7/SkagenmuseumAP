@@ -82,6 +82,7 @@
             font-size: 1rem;
             padding: 0.5rem;
             display: inline-block;
+            position: relative;
           }
           
           
@@ -90,12 +91,12 @@
             flex-direction: column;
             align-items: center;
             list-style: none;
-            position: fixed; 
-            top: 150px; 
+            position: absolute; 
+            top: 100%; 
             left: 0;
-            width: 100vw;
+           
             background: #fff;
-            padding: 2rem 4rem;
+            padding: 1rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             z-index: 999;
             box-sizing: border-box;
@@ -110,15 +111,60 @@
           }
           
           .nav-menu li .dropdown li a {
-            color: #333;
+            color: #000000;
             text-decoration: none;
             display: block;
             font-size: 1rem;
             padding: 0.5rem 0;
           }
           
-          .nav-menu li .dropdown li a:hover {
-            background: #f0f0f0;
+         
+
+          .nav-menu li.has-dropdown > a {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem; 
+          }
+          
+          .nav-menu li .dropdown li a {
+            position: relative;
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+          }
+          
+          /* Streg-effekt */
+          .nav-menu li .dropdown li a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--Bl-gul-grad, linear-gradient(90deg, #C6DFFF 0%, rgba(255, 235, 212, 0.40) 49.52%, #FFD989 100%));
+            transition: width 0.3s ease;
+          }
+          
+          .nav-menu li .dropdown li a:hover::after {
+            width: 100%;
+          }
+          
+
+          .nav-menu li.has-dropdown > a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--Bl-gul-grad, linear-gradient(90deg, #C6DFFF 0%, rgba(255, 235, 212, 0.40) 49.52%, #FFD989 100%)); /* din ønskede farve */
+            transition: width 0.3s ease;
+          }
+          
+          .nav-menu li.has-dropdown > a:hover::after {
+            width: 100%;
           }
           
       // knap til billet start
@@ -152,3 +198,104 @@
       }
       // nav slutter
     }
+
+   
+    .mobile-nav ul.dropdown {
+      display: none;
+      padding-left: 1rem; /* evt. indrykning */
+    }
+    
+    .mobile-nav li.active > ul.dropdown {
+      display: block;
+    }
+
+    .logo-mobile{
+    position: relative;
+    left: 2rem;
+    top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .top-box,
+      .main-nav {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .mobile-nav li{
+        display: none;
+      }
+      .logo-mobile{
+        display: none;
+      }
+    }
+
+    .burger {
+      display: none; 
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 4rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1100;
+    }
+    
+    /* Mobil visning */
+    @media (max-width: 768px) {
+      .burger {
+        display: block;
+      }
+    
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        padding: 4rem 2rem 2rem;
+        overflow-y: auto;
+        z-index: 1099;
+        text-align: center;
+      }
+    
+      .mobile-nav.active {
+        display: block;
+      }
+    
+      .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    
+      .mobile-nav li {
+        margin-bottom: 1.5rem;
+      }
+    
+      .mobile-nav a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        display: block;
+      }
+    
+      .mobile-nav a.buy-button {
+        background: linear-gradient(to right, #cd961e, #ffda93, #cd961e);
+        padding: 1rem 2rem;
+        border-radius: 9999px;
+        text-align: center;
+        color: #111;
+        font-weight: bold;
+      }
+
+      ul.dropdown{
+        margin: 2rem 0 2rem 0;
+      }
+    }
+    
