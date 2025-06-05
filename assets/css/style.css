@@ -864,28 +864,22 @@ div.info-box__divider {
 }
 
 .bento-layout .b {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
+
   grid-area: b;
 }
 
 .bento-layout .a {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+
   grid-area: a;
 }
 
 .bento-layout .b2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
+
   grid-area: b2;
 }
 
 .bento-layout .c {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+
   grid-area: c;
 }
 
@@ -4988,7 +4982,7 @@ hr {
   .ungContent h3 {
     font-size: 22px;
   }
->>>>>>> Ung-Trine
+
 }
 
 @media (max-width: 768px) {
