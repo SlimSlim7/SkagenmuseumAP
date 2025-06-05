@@ -1335,9 +1335,9 @@ path.icon-stroke {
 .bento-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
+ 
       grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: (minmax(300px, auto))[3];
+ 
       grid-template-rows: repeat(3, minmax(300px, auto));
   gap: 12px;
   max-width: 1400px;
@@ -2079,7 +2079,7 @@ path.icon-stroke {
 .card-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+
       grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding: 8px;
@@ -2583,7 +2583,7 @@ path.icon-stroke {
 
 @media screen and (max-width: 768px) {
   .card-grid {
-    -ms-grid-columns: (1fr)[2];
+
         grid-template-columns: repeat(2, 1fr);
   }
   .h1-skagensmalerne {
@@ -2658,7 +2658,7 @@ path.icon-stroke {
     border-radius: 6px;
   }
   .slider-wrapper {
-    -ms-scroll-snap-type: x mandatory;
+
         scroll-snap-type: x mandatory;
   }
   .værker-container img {
@@ -2680,7 +2680,7 @@ path.icon-stroke {
 
 @media screen and (max-width: 480px) {
   .card-grid {
-    -ms-grid-columns: 1fr;
+ 
         grid-template-columns: 1fr;
   }
 }
@@ -2688,7 +2688,7 @@ path.icon-stroke {
 .bento-container-værker {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[9];
+ 
       grid-template-columns: repeat(9, 1fr);
   grid-auto-rows: 400px;
   gap: 6px;
@@ -5417,7 +5417,7 @@ p {
 .card-grid2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+
       grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding: 8px;
@@ -5507,7 +5507,7 @@ p {
   .card-grid2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+  
         grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     padding: 8px;
