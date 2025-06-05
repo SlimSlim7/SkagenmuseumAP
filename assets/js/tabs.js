@@ -1,32 +1,37 @@
+// fanger alt med .tab og id "tab-content"
 const tabs = document.querySelectorAll(".tab");
 const tabContent = document.getElementById("tab-content");
-
+// array af content
 const content = {
   skagen: {
     title: "Skagens Kunstmuseum",
-    text: "Vores hovedmuseum der rummer de største værker.",
+    text: "Den 20. oktober 1908 blev Skagens Museum stiftet. Det skete i spisesalen på Brøndums Hotel, hvor Skagensmalere skrev de første linjer i historien om det museum, der i dag rummer verdens største samling af værker af skagensmalerne.",
     address: "Brøndumsvej 4, 9990 Skagen",
-    img: "./assets/img/fakeVideoSkagen.png"
+    img: "./assets/img/museer-skagenmuseum.webp",
+    link: "selve-huset.html",
   },
   ancher: {
     title: "Anchers Hus",
-    text: "Hjem for vores to vigtige kunstnere, Anna og Michael Ancher.",
-    address: "Markvej 2, 9990 Skagen",
-    img: "./assets/img/anchershus.jpg"
+    text: "Her boede Anna og Michael Ancher det meste af deres liv og skabte et ægte kunstnerhjem.",
+    address: "Markvej 2, 4, 9990 Skagen",
+    img: "./assets/img/ancherhus.webp",
+    link: "selve-huset.html",
   },
   drachmann: {
     title: "Drachmanns Hus",
-    text: "I huset kan du både opleve kunst og hans personlige genstande.",
+    text: "Holger Drachmann kunne smykke sig med mange titler, og hans farverige personlighed skinner igennem i det, der skulle vise sig at blive hans sidste hjem.",
     address: "Hans Baghs Vej 21, 9990 Skagen",
-    img: "./assets/img/drachmann.jpg"
+    img: "./assets/img/drachmannhus.webp",
+    link: "selve-huset.html",
   }
 };
-
+// denne function render mit content
+// bruger data.text eller noget andet til at vise det dynmaisk, så via array som har en key (id)
 function renderContent(key) {
   const data = content[key];
   tabContent.innerHTML = `
     <div class="museer-text">
-      <h3>${data.title}</h3>
+      <h3>${data.title}</h3> 
       <p>${data.text}</p>
       <div class="lokation-info">
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
@@ -34,17 +39,20 @@ function renderContent(key) {
         </svg>
         <p>${data.address}</p>
       </div>
-      <button>Læs mere</button>
+      <a href="${data.link}" class="museer-button">
+        <button>Bliv klogere på museet</button>
+      </a>
     </div>
     <img src="${data.img}" alt="${data.title}">
   `;
 }
 
+// kigger alle tabs igennem og giver en eventlistener 
 tabs.forEach(tab => {
   tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
-    renderContent(tab.dataset.tab);
+    tabs.forEach(t => t.classList.remove("active")); // fjerner activ class for alle tabs
+    tab.classList.add("active"); // tilføjer activ tabs til den klikkede aktiveret tab
+    renderContent(tab.dataset.tab); // data-tab er set på nogle elementer, som så bliver kaldt
   });
 });
 

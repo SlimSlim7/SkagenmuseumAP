@@ -33,7 +33,7 @@
 
 
   .divider-wrapper-huset {
-    margin-bottom: 24px;
+    margin-bottom: 48px;
   }
   
   .divider-wrapper-huset h1 {
@@ -50,13 +50,18 @@
     display: flex;
     align-items: flex-start;
     text-align: center;
-    gap: 24px;
+    gap: 80px;
     margin-top: 80px;
+    margin-bottom: 80px;
 
     p{
-        margin-bottom: 24px;
+        
         font-size: 14px;
     }
+  }
+
+  .huset-info1{
+    margin-bottom: 48px;
   }
 
 p.h3-fake{
@@ -70,9 +75,6 @@ p.h3-fake{
     border-radius: 8px;
   }
   
-  .huset-tekst {
-    flex: 1;
-  }
   
   
   .huset-tekst hr {
@@ -151,7 +153,7 @@ p.h3-fake{
     color: #505050;
   }
   
-  .hr.huset-streg {
+  hr.huset-streg {
     height: 1px;
     border: none;
     background-color: #D9D9D9;
@@ -162,8 +164,9 @@ p.h3-fake{
   .huset-btn-wrapper {
     display: inline-block;
     border-radius: 72px;
-    background: linear-gradient(90deg, #ECA619, #7098DD); 
-    padding: 4px;    
+    background: linear-gradient(90deg, #FFE3AD, #C9E1FD); 
+    padding: 2px;
+    font-size: 16px;
   }
   
   .huset-btn {
@@ -178,8 +181,11 @@ p.h3-fake{
     display: block;
     min-width: 180px;
     z-index: 1; 
+    transition: border 0.3s ease;
   }
   
+  
+
   .huset-btn::before {
     content: "";
     position: absolute;
@@ -187,7 +193,17 @@ p.h3-fake{
     border-radius: 60px;
     background: linear-gradient(93deg, #FFD981 -2.6%, #FFF0CF 47.03%, #FFD981 95.15%);
     z-index: -1;
+    transition: border 0.3s ease, border 0.3s ease;
+    border: 1px solid transparent;
   }
+  button.huset-btn:hover::before {
+    background: white;
+    border: 1px solid #9E6C07;
+    transition: border 0.3s ease;
+  }
+  
+  
+
 
   .huset-divider{
     height: 0.5px;
