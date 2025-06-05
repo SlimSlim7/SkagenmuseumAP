@@ -2,7 +2,7 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// 2. Gem data (du kan flytte det til JSON senere hvis du vil)
+// 2. Gem data 
 const malere = {
   maler1: {
     navn: "P.S. Krøyer",
@@ -63,10 +63,10 @@ const malere = {
     kunstnereNavn3: "P.S. Krøyer",
     kunstnereYear3: "Født 1851 - død 1909",
   },
-  // ... tilføj flere malere her
+ 
 };
 
-// 3. Indsæt i HTML
+// 3. Det er fra html, hvor vi hiver de forskellige ID'er og bruger dem til at finde en bestemt ID
 if (id && malere[id]) {
   const m = malere[id];
 document.getElementById("navn").textContent = m.navn;
@@ -120,31 +120,31 @@ const leftArrow = document.querySelector(".pil-left");
 const rightArrow = document.querySelector(".pil-right");
 
 let scrollPosition = 0;
-const scrollAmount = 320; // Tilpas til dine billeder + gap
+const scrollAmount = 320; // Tilpas til billeder + gap
 
-// Bredde på billeder inkl. gap, og hvor meget vi kan scrolle maks
-const totalItems = container.children.length;
-const containerWidth = container.parentElement.offsetWidth; // .slider-wrapper bredde
-const itemWidth = scrollAmount; // hvis scrollAmount = billede + gap
-const maxScroll = -(itemWidth * totalItems - containerWidth);
+// Bredde på billeder inkl. gap, og hvor meget vi kan scrolle maks, så den ikke scroller forevigt
+const totalItems = container.children.length; // antal elementer i slideren
+const containerWidth = container.parentElement.offsetWidth; // Bredde for slideren, som er synligt af gangen
+const itemWidth = scrollAmount; // det viser bredden på et slide
+const maxScroll = -(itemWidth * totalItems - containerWidth); // bredden for at scroll til venstre, så den ikke scroller for langt. 
 
 function updateButtons() {
-  // Disable venstre pil hvis vi er helt til venstre (scrollPosition >= 0)
+  // Disable venstre pil hvis vi er helt til venstre og gør den transparent
   leftArrow.style.opacity = scrollPosition >= 0 ? 0.3 : 1;
   leftArrow.style.pointerEvents = scrollPosition >= 0 ? 'none' : 'auto';
 
-  // Disable højre pil hvis vi er helt til højre (scrollPosition <= maxScroll)
+  // Disable højre pil hvis vi er helt til højre og gør den transparent
   rightArrow.style.opacity = scrollPosition <= maxScroll ? 0.3 : 1;
   rightArrow.style.pointerEvents = scrollPosition <= maxScroll ? 'none' : 'auto';
 }
-
+// Når højre pil bliver klikket, så når vi rammer den maksimal scroll, så stopper den der og man justere containeren med css transform
 rightArrow.addEventListener("click", () => {
   scrollPosition -= scrollAmount;
   if (scrollPosition < maxScroll) {
     scrollPosition = maxScroll;
   }
   container.style.transform = `translateX(${scrollPosition}px)`;
-  updateButtons();
+  updateButtons(); // juster knappens tilstand, fra enable/disable
 });
 
 leftArrow.addEventListener("click", () => {

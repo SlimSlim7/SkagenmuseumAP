@@ -43,7 +43,9 @@ burger.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
   const mobileNav = document.querySelector('#mobile-menu');
   const dropdownItems = mobileNav.querySelectorAll('.dropdown-click');
-
+// For hvert dropdown-element:
+// Find <a>-linket og tilføj en klik-hændelse, der forhindrer standard-navigation,
+// Bruger Eventlistener til at f.eks. åbne min drop-down.
   dropdownItems.forEach(item => {
     const link = item.querySelector('a');
     link.addEventListener('click', e => {

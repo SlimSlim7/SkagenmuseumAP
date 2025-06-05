@@ -113,23 +113,126 @@
     cursor: pointer;
     width: fit-content;
   }
-  
-  .arrangement-sociale {
-    display: flex;
-   
-    align-items: center;
-    max-width: 100%;
+
+  .deltag-arra-btn:hover{
+    background: #ffffff;
+    border: 2px solid #F9CB80;
   }
   
-  .arrangement-sociale p {
+  .sociale-wrapper {
+    display: flex;
+    gap: 16px;
+   
+   
+  }
+  
+  .arran-boks-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 35%;
+    flex: 1;
+  }
+
+  .arran-box {
+    border: 1px solid #D9D9D9;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+
+  .arran-linje {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .arran-linje p {
     margin: 0;
     font-weight: bold;
+    white-space: normal;
   }
   
-  .arrangement-sociale a {
-    margin-left: 12px; /* afstand mellem ikoner */
-    color: inherit; /* eller en specifik farve */
-    text-decoration: none;
-    font-size: 1.2rem;
+ 
+  
+  hr.arran-streg {
+    height: 1px;
+    border: none;
+    background-color: #D9D9D9;
+    width: 100%;
+   margin: 8px 0;
   }
+  
+
+  // Mobil
+
+  @media (max-width: 768px) {
+    .arrangementer-content {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .arrangementer-indhold {
+      order: 2;
+      max-width: 90%;
+      text-align: center; 
+    }
+  
+    .arran-boks-wrapper {
+      order: 3;
+      max-width: 90%;
+      margin: 0 auto;
+      align-items: center;
+    }
+  
+    .label-box {
+      order: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+    }
+  
+    .selve-arra-hero {
+      height: auto;
+      padding: 2rem 1rem;
+      margin-left: calc(-10vw);
+      margin-right: calc(-10vw);
+    }
+  
+    .hero-text-arra h1 {
+      font-size: 32px;
+      margin: 0 auto 12px auto;
+      text-align: center;
+    }
+  
+    .hero-text-arra p {
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .arran-box {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .deltag-arra-btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .sociale-wrapper {
+      justify-content: center;
+    }
+
+    .arran-linje {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+  
   

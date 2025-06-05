@@ -14,15 +14,18 @@
     margin-right: calc(-10vw);
 
     h1{
-        margin: 12px 0px 12px 140px ;
+       
         font-size: 48px;
         font-weight: 700;
+        margin: 0 0 56px 140px;
+        text-align: start;
        
         
     }
     p{
-        margin-left: 140px;
+        margin: 0 0 16px 140px;
         font-size: 18px;
+        
         
     }
 
@@ -50,7 +53,7 @@
   }
   
   .tab-billet.active {
-    border-bottom: 3px solid #ECA619; /* Gul linje under aktiv tab */
+    border-bottom: 3px solid #ECA619; 
   }
   
   .tab-billet-header {
@@ -143,9 +146,7 @@
 
   
 
-    .footer{
-      display: none;
-    }
+    
 
     .divider-wrapper-historie {
       display: flex;

@@ -1,3 +1,4 @@
+// array af information angående lokation
 const locations = [
     {
       title: "Skagens Kunstmuseum",
@@ -21,7 +22,7 @@ const locations = [
   const closeBtn = document.getElementById("closeBtn");
   const openBtn = document.getElementById("openBtn");
   
-  // Indsæt dynamiske tabs
+  // Her bliver det indlæst dynamisk tabs, via location array, som så laver en div og giver den en class navn "map-tab"
   locations.forEach((loc) => {
     const tab = document.createElement("div");
     tab.className = "map-tab";
@@ -49,7 +50,7 @@ const svgDrachmann = `
   </svg>
 `;
 
-// Vælg SVG baseret på titel
+// Vælg SVG baseret på titel så det bliver dynmaisk
 let iconSVG = "";
 if (loc.title === "Skagens Kunstmuseum") {
   iconSVG = svgSkagen;
@@ -76,15 +77,15 @@ const titleWithIcon = `<span class="icon">${iconSVG}</span> <span>${loc.title}</
         <p>${loc.details}</p>
       </div>
     `;
-  
+    // Tilføj klik-event: toggler klassen "open" ved klik
     tab.addEventListener("click", () => {
-      tab.classList.toggle("open");
+      tab.classList.toggle("open"); 
     });
   
-    container.appendChild(tab);
+    container.appendChild(tab); // Tilføj tab'en til containeren i DOM'en
   });
   
-  // FLYTTET HERUD – korrekt placeret!
+  // eventlistener som adder en class.list til at vise og gemme closeBtn og openBtn
   closeBtn.addEventListener("click", () => {
     mapTabs.classList.add("hidden");
     openBtn.classList.add("visible");
@@ -98,7 +99,7 @@ const titleWithIcon = `<span class="icon">${iconSVG}</span> <span>${loc.title}</
 
   // FAQ
   const questions = document.querySelectorAll('.faq-question');
-
+// Gennem går alle spørgsmålene, og når man klikker på det via eventlistener og når man trykker på spørgsmålet, så kommer søskende elementet, som er svaret. 
   questions.forEach(question => {
     question.addEventListener('click', () => {
       const answer = question.nextElementSibling;
@@ -108,7 +109,7 @@ const titleWithIcon = `<span class="icon">${iconSVG}</span> <span>${loc.title}</
         answer.style.height = '0';
         question.classList.remove('active');
       } else {
-        // Først sæt højde til scrollHeight (indholdets faktiske højde)
+        // Først sæt højde til scrollHeight, som er indholdet reele højde
         answer.style.height = answer.scrollHeight + 'px';
         question.classList.add('active');
       }

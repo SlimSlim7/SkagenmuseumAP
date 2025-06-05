@@ -9,14 +9,37 @@
 @import 'selve-huset';
 @import 'billet-side';
 @import 'planlagning';
+@import '_aegte-ung';
+@import 'udvalgteVearker';
+@import 'udstillinger';
+@import 'selve-udstillinger';
+@import 'arrangementer';
+
+
+@import url("https://use.typekit.net/bvf0dpa.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    p a button{
+        font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+    }
 }
 body {
     margin: 0;
     padding: 0;
+    p, a, button{
+        font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+    }
 }
 // Farvepalette
     $midnightBlue: #113243;
@@ -39,3 +62,9 @@ body {
     $psSolsikkegul: #C48222;
     $psPastelgul: #DEAF69;
     $psGrissepink: #D3998E;
+
+   
+    h1{
+        font-family: lust;
+    }
+    

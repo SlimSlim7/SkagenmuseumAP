@@ -32,13 +32,18 @@
   
   .hoejre hr {
     margin-bottom: 20px;
+    
     border: 1px solid #ECA619;
+    margin: 0;
   }
   
   .hoejre h1 {
-    font-size: 28px;
+    font-size: 36px;
+    font-family: lust;
     margin-bottom: 20px;
     color: white;
+    text-align: start;
+    margin-top: 24px;
   }
   
   .hoejre p {
@@ -60,7 +65,7 @@
   }
   
 
-  .social-streg {
+  hr.social-streg {
     margin-top: 30px;
     border: 1px solid #ECA619;
   }
@@ -82,12 +87,12 @@
     
   }
   
-  .tilbage-knap-værker {
+  a.tilbage-knap-værker {
     display: flex;
     justify-content: start;
     gap: 1rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff !important; 
     font-weight: 400;
     font-size: 16px;
     margin: 2rem 0rem 2rem 4rem;
@@ -163,6 +168,12 @@
     border-radius: 60px;
     cursor: pointer;
     
+  }
+
+  .kunster-btn:hover{
+    background-color: white;
+    border-radius: 60px;
+    border: 2px solid #F9CB80;
   }
 
   .kunster-slider{
